@@ -1,0 +1,17 @@
+html
+    head
+        link(rel="stylesheet", href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css")
+    body
+        ul.nav
+            li.nav-item
+                a.nav-link.active(href='#') Active
+            li.nav-item
+                a.nav-link(href='/') Home
+            li.nav-item
+                a.nav-link(href='/users') Users
+            if user
+                li.nav-item
+                    a.nav-link= user.name
+
+        .container.pt-5
+            block content
