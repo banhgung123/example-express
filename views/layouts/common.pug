@@ -4,11 +4,13 @@ html
     body
         ul.nav
             li.nav-item
-                a.nav-link.active(href='#') Active
-            li.nav-item
                 a.nav-link(href='/') Home
             li.nav-item
                 a.nav-link(href='/users') Users
+            li.nav-item
+                a.nav-link(href='/products') Products
+            li.nav-item
+                a.nav-link(href='#') Cart
             if user
                 li.nav-item
                     a.nav-link= user.name
